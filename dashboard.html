@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DashBoard</title>
+    <!-- tailwind link  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="container mx-auto">
+    <header>
+        <h1 class="text-6xl text-center mt-40">Your  <span class="font-bold text-purple-500 underline">DashBoard</span></h1>
+    </header>
+
+    <section class="mt-16">
+        <div class="grid grid-cols-3 gap-10 w-9/12 mx-auto">
+            <div  class="bg-lime-400 text-center p-8 rounded-lg">
+                <h2 class="text-white text-2xl">Deposit</h2>
+                <h3 class="text-white text-2xl">$<span id="deposit">00</span></h3>
+            </div>
+            <div class = "bg-red-500 text-center p-8 rounded-lg">
+                <h2 class="text-white text-2xl" >Withdraw</h2>
+                <h3 class="text-white text-2xl">$<span id="withdraw">00</span></h3>
+            </div>
+            <div class = "bg-emerald-500 text-center p-8 rounded-lg">
+                <h2 class="text-white text-2xl">balance</h2>
+                <h3 class="text-white text-2xl">$<span id="balance" >1240</span></h3>
+            </div>
+
+        </div>
+        <div class="grid grid-cols-2 gap-10 w-9/12 mx-auto mt-12 h-40">
+            <div class="bg-cyan-600  p-8 rounded-lg">
+                <h2 class="text-white text-2xl">New Deposit</h2>
+                <input type="text" name="" class="border-solid border-2 border-slate-300 mt-2 w-[15rem] h-[2rem] rounded" id="deposit-text"><br>
+                <button id="deposit-btn" class="bg-red-400 mt-2 p-3 text-white font-semibold rounded-2xl">Deposit</button>
+            </div>
+            <div class = "bg-fuchsia-600  p-8 rounded-lg  ">
+                <h2 class="text-white text-2xl" >Withdraw Amount</h2>
+                <input type="text" name="" class="border-solid border-2 border-slate-300 mt-2 w-[15rem] h-[2rem] rounded" id="withdraw-field"><br>
+                <button id="withdraw-btn" class="bg-red-400 font-semibold text-white mt-2 p-3 rounded-2xl">Withdraw</button>
+            </div>
+            
+        </div>
+    </section>
+
+
+    <script src="./js/app2.js"></script>
+</body>
+</html>
